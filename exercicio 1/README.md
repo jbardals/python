@@ -13,6 +13,7 @@ Nun servidor con Apache2.4 e python3
     2.  Un directorio con contidos estáticos (directorio público para servir a aplicación).
     
     mkdir python-web/mypythonapp
+    
     mkdir python-web/public_html
     
     En `mypythonapp`, almacenaremos entón todos os módulos e paquetes da nosa aplicación Python, mentres que en `public_html`, estarán os archivos estáticos e será o único directorio ao que se poida acceder desde o navegador Web.
