@@ -13,6 +13,7 @@ Nun servidor con Apache2.4 e python3
     2.  Un directorio con contidos estáticos (directorio público para servir a aplicación).
     
     mkdir python-web/mypythonapp
+    
     mkdir python-web/public_html
     
     En `mypythonapp`, almacenaremos entón todos os módulos e paquetes da nosa aplicación Python, mentres que en `public_html`, estarán os archivos estáticos e será o único directorio ao que se poida acceder desde o navegador Web.
@@ -26,9 +27,12 @@ Se encargará de definir unha función, que actúe con cada petición do usuario
 Creamos e editamos o ficheiro de configuración do sitio virtual ao que imos dirixir as peticións á webapp python, p.ex:
       *sudo nano /etc/apache2/sites-available/python-web*
    e o configuramos do seguinte xeito:
+   
      DocumentRoot do sitio -> será a carpeta pública, `public_html`
+     
      Coa liña
       *WSGIScriptAlias / /home/ubuntu/python-web/mypythonapp/controller.py* 
-      rediriximos as peticións públicas do usuario ao front controller_.
+      rediriximos as peticións públicas do usuario ao front controller.
+      
 6. Habilitamos o sitio web:  `sudo a2ensite python-web` e recargamos Apache:  `sudo service apache2 reload`
 7. Abrindo a url http://python-web se debería ver: _"Bienvenido a mi PythonApp"_.
