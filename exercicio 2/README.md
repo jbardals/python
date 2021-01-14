@@ -14,5 +14,5 @@ El diccionario  `environ`  que se recibe con cada pedido HTTP, contiene las vari
 
 De esta forma podemos hacer un [controlador](controller.py) que según el tipo de petición haga diferentes operaciones aritméticas con los valores pasados en los parámetros de la petición para obtener el resultado que se muestra en la [imagen](imgs/resultado.png)
 
-Modifica el controlador para que además de la suma se pueda enviar una petición para que multiplique los valores que se le pasen como parámetros.
+**Modifica el controlador para que además de la suma se pueda enviar una petición para que multiplique los valores que se le pasen como parámetros.**
 
